@@ -28,11 +28,18 @@ public class Model {
     private String outro;
     private String caso;
     private String comunicante;
-    private String codigo;/**/private String sadt;
-    private String diagnostico;/**/ private String controle;
-    private String n_sessoes;/**/private String material;
-    private String data_requisicao;/**/private String  encaminhar;/**/ private String Endereco;/**/
-    private String codigo_unidade2;/**/private String telefone;/**/private String cr;
+    private String codigo;
+    private String sadt;
+    private String diagnostico;/**/ 
+    private String controle;
+    private String n_sessoes;/**/
+    private String material;
+    private String data_requisicao;/**/
+    private String  encaminhar;/**/ 
+    private String Endereco;/**/
+    private String codigo_unidade2;/**/
+    private String telefone;/**/
+    private String cr;
  public Model(){}
     public Model(String matricula, String est, String rg, String dc, String seq, 
             String data_nasc, String n_ordem, String codigo_unidade, String nome, String munucipio, 
