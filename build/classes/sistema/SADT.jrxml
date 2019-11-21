@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.10.0.final using JasperReports Library version 6.10.0-unknown  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SADT" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c8dc01a1-029f-40b4-9907-7aa1608032ce">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="n_ordem" class="java.lang.String"/>
+	<field name="codigo_unidade" class="java.lang.String"/>
+	<field name="matricula" class="java.lang.String"/>
+	<field name="est" class="java.lang.String"/>
+	<field name="rg" class="java.lang.String"/>
+	<field name="dc" class="java.lang.String"/>
+	<field name="seq" class="java.lang.String"/>
+	<field name="data_nasc" class="java.lang.String"/>
+	<field name="nome" class="java.lang.String"/>
+	<field name="municipio" class="java.lang.String"/>
+	<field name="sexo" class="java.lang.String"/>
+	<field name="codigo_municipal" class="java.lang.String"/>
+	<field name="suspeita" class="java.lang.String"/>
+	<field name="data_sintomas" class="java.lang.String"/>
+	<field name="uso_de" class="java.lang.String"/>
+	<field name="Field_1" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="62" splitType="Stretch">
+			<staticText>
+				<reportElement x="139" y="-10" width="280" height="30" uuid="9a504ef4-453a-47e0-8b1d-5f731d010208"/>
+				<textElement>
+					<font fontName="Arial Black" size="12"/>
+				</textElement>
+				<text><![CDATA[Sistema de Informção Ambulatorial]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="70" y="10" width="495" height="50" uuid="9ea7981c-54f5-4cef-8c24-fae428533c24"/>
+				<textElement>
+					<font fontName="Arial Black" size="11"/>
+				</textElement>
+				<text><![CDATA[Ficha de Requsição de Serviços Auxiliares de Diagnose e Terapia (SADT)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-11" y="43" width="200" height="19" uuid="c7137d92-91d1-4863-9f8e-c368711d2c0e"/>
+				<text><![CDATA[Nome da Unidade Requisitante]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="390" y="30" width="100" height="30" uuid="09ce3eb9-cc80-4013-a26f-e20da851655d"/>
+				<text><![CDATA[Nº de Ordem :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="460" y="30" width="100" height="30" uuid="ec6fd488-fbca-45c4-99e4-2d44d0e9dca0"/>
+				<textFieldExpression><![CDATA[$F{n_ordem}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="360" y="45" width="100" height="14" uuid="169978fc-eb7a-4c9b-91fc-48e8587191e5"/>
+				<text><![CDATA[Código da Unidade :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="460" y="45" width="100" height="15" uuid="3a285ea9-0e27-42fc-91ec-33637f1928e2"/>
+				<textFieldExpression><![CDATA[$F{codigo_unidade}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="-20" y="60" width="595" height="1" uuid="1631a824-6014-40fa-bd80-893d6a9830ee"/>
+				<graphicElement>
+					<pen lineWidth="0.4" lineStyle="Solid"/>
+				</graphicElement>
+			</rectangle>
+		</band>
+	</title>
+	<detail>
+		<band height="275" splitType="Stretch">
+			<staticText>
+				<reportElement x="-11" y="0" width="136" height="14" uuid="0d1ca10c-5ef0-4c35-b7a4-98c3b53608a5"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Indentificação do paciente]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-11" y="20" width="52" height="15" uuid="b229daa5-9f94-49e5-8a1e-0336b3522519"/>
+				<text><![CDATA[Matricula]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="-11" y="35" width="100" height="14" uuid="f7620ee1-bd81-4c44-86ea-e53b795052ee"/>
+				<textFieldExpression><![CDATA[$F{matricula}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="100" y="20" width="100" height="30" uuid="cac060bd-e31b-496f-aefe-d850da8c6b09"/>
+				<text><![CDATA[DC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="20" width="100" height="30" uuid="a4be5eb7-9095-4524-b4a6-ebc163deaf62"/>
+				<text><![CDATA[Seq.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="319" y="20" width="100" height="30" uuid="0d13a819-d13c-4b89-8ea7-a8b6973dd765"/>
+				<text><![CDATA[Data e Nasc.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="430" y="19" width="100" height="30" uuid="80c35e7a-ae87-4163-a1a4-2dd422321815"/>
+				<text><![CDATA[sexo]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="100" y="35" width="100" height="30" uuid="a5d5628f-61aa-496c-b7fa-0374093720f1"/>
+				<textFieldExpression><![CDATA[$F{dc}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="35" width="100" height="30" uuid="74c55137-8ad1-4cd4-9de2-d23d47c2a596"/>
+				<textFieldExpression><![CDATA[$F{seq}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="35" width="100" height="30" uuid="cdebbd12-d18a-428e-90de-2c2fd02ce8b2"/>
+				<textFieldExpression><![CDATA[$F{data_nasc}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="430" y="35" width="100" height="30" uuid="5a318cf5-30d5-42b9-b540-8f844157e934"/>
+				<textFieldExpression><![CDATA[$F{sexo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="30" y="50" width="350" height="30" uuid="55a8402b-f69d-47e8-a81c-12ad0862fb19"/>
+				<textFieldExpression><![CDATA[$F{nome}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-10" y="50" width="100" height="30" uuid="f208d6a4-f68d-4562-bbde-db07c6e16d07"/>
+				<text><![CDATA[nome]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="40" y="65" width="100" height="30" uuid="820c2ff4-59c3-43bc-a23b-57b617e866c9"/>
+				<textFieldExpression><![CDATA[   $F{municipio}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-10" y="65" width="100" height="30" uuid="be7b3536-31c8-4609-a756-6e00de085458"/>
+				<text><![CDATA[municipio]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="430" y="60" width="100" height="30" uuid="23f30e7b-9fc1-4f7b-96e0-3de8efa56e72"/>
+				<textFieldExpression><![CDATA[$F{codigo_municipal}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="319" y="60" width="100" height="30" uuid="90a8efca-a9f9-4d5c-bf1f-8ecac0a59dff"/>
+				<text><![CDATA[Código municipal]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="-11" y="110" width="100" height="30" uuid="d32919cc-e293-4231-88ff-1cf14a10aae9"/>
+				<textFieldExpression><![CDATA[$F{suspeita}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-10" y="90" width="100" height="30" uuid="0204a171-37f9-4b46-bba8-d5fbef3d0b69"/>
+				<text><![CDATA[Suspeita Clinica ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="320" y="90" width="100" height="30" uuid="8f462585-0ae5-4d08-b387-c58dda605a15"/>
+				<textFieldExpression><![CDATA[$F{data_sintomas}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="210" y="90" width="116" height="30" uuid="b44d62fb-c15a-4f1e-b66c-7c36ecbd0514"/>
+				<text><![CDATA[data primeiros sintomas:]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>
