@@ -55,7 +55,6 @@ public class SADT extends javax.swing.JFrame {
         jTextField6 = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
         jTextField7 = new javax.swing.JTextField();
-        dateChooserCombo1 = new datechooser.beans.DateChooserCombo();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox<>();
@@ -69,7 +68,6 @@ public class SADT extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
         jLabel18 = new javax.swing.JLabel();
-        dateChooserCombo2 = new datechooser.beans.DateChooserCombo();
         jRadioButton1 = new javax.swing.JRadioButton();
         jRadioButton2 = new javax.swing.JRadioButton();
         jRadioButton3 = new javax.swing.JRadioButton();
@@ -87,7 +85,6 @@ public class SADT extends javax.swing.JFrame {
         jLabel23 = new javax.swing.JLabel();
         jTextField13 = new javax.swing.JTextField();
         jLabel24 = new javax.swing.JLabel();
-        dateChooserCombo3 = new datechooser.beans.DateChooserCombo();
         jRadioButton7 = new javax.swing.JRadioButton();
         jRadioButton8 = new javax.swing.JRadioButton();
         jLabel25 = new javax.swing.JLabel();
@@ -102,6 +99,8 @@ public class SADT extends javax.swing.JFrame {
         jLabel30 = new javax.swing.JLabel();
         jTextField18 = new javax.swing.JTextField();
         jSeparator2 = new javax.swing.JSeparator();
+        jDateChooser1 = new com.toedter.calendar.JDateChooser();
+        jDateChooser2 = new com.toedter.calendar.JDateChooser();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -131,7 +130,7 @@ public class SADT extends javax.swing.JFrame {
 
         jLabel5.setText("Código da Unidade");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 80, -1, -1));
-        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 80, 95, -1));
+        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 80, 95, -1));
 
         jLabel6.setText("Identificação do Paciente");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 109, -1, -1));
@@ -155,7 +154,6 @@ public class SADT extends javax.swing.JFrame {
         jLabel11.setText("Seq");
         getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(511, 137, -1, -1));
         getContentPane().add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(539, 134, 35, -1));
-        getContentPane().add(dateChooserCombo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(698, 134, -1, -1));
 
         jLabel12.setText("Data de Nascimento");
         getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(592, 137, -1, -1));
@@ -176,7 +174,7 @@ public class SADT extends javax.swing.JFrame {
 
         jLabel16.setText("Código Municipal");
         getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 200, -1, -1));
-        getContentPane().add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 200, 75, -1));
+        getContentPane().add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 190, 75, -1));
 
         jLabel17.setText("Suspeita Clinica");
         getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 222, -1, -1));
@@ -189,7 +187,6 @@ public class SADT extends javax.swing.JFrame {
 
         jLabel18.setText("Data Primeiro Sintomas ");
         getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(477, 242, -1, -1));
-        getContentPane().add(dateChooserCombo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 244, -1, -1));
 
         jRadioButton1.setText("Uso de");
         getContentPane().add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(477, 274, -1, -1));
@@ -227,7 +224,7 @@ public class SADT extends javax.swing.JFrame {
 
         jLabel22.setText("Nº Sessões");
         getContentPane().add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 440, -1, -1));
-        getContentPane().add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 440, 79, -1));
+        getContentPane().add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 440, 79, -1));
 
         jLabel23.setText("Material Enviado");
         getContentPane().add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 490, -1, -1));
@@ -235,7 +232,6 @@ public class SADT extends javax.swing.JFrame {
 
         jLabel24.setText("Data de Requisição");
         getContentPane().add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 520, -1, -1));
-        getContentPane().add(dateChooserCombo3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 520, -1, -1));
 
         jRadioButton7.setText("1º Amostra");
         getContentPane().add(jRadioButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 520, -1, -1));
@@ -249,7 +245,7 @@ public class SADT extends javax.swing.JFrame {
 
         jLabel26.setText("Código Unidade");
         getContentPane().add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 550, -1, -1));
-        getContentPane().add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 550, 115, -1));
+        getContentPane().add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 550, 115, -1));
 
         jLabel27.setText("Endereço");
         getContentPane().add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 580, -1, -1));
@@ -257,15 +253,17 @@ public class SADT extends javax.swing.JFrame {
 
         jLabel28.setText("Telefone");
         getContentPane().add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 580, -1, -1));
-        getContentPane().add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 580, 115, -1));
+        getContentPane().add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 580, 115, -1));
 
         jLabel29.setText("Assinatura do responsável");
         getContentPane().add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 620, -1, -1));
 
         jLabel30.setText("CR");
         getContentPane().add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 610, -1, -1));
-        getContentPane().add(jTextField18, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 610, 120, -1));
+        getContentPane().add(jTextField18, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 610, 120, -1));
         getContentPane().add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 650, 880, 10));
+        getContentPane().add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 140, 130, -1));
+        getContentPane().add(jDateChooser2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 520, 120, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -316,11 +314,10 @@ lista.add(print);
 return lista;
 }
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private datechooser.beans.DateChooserCombo dateChooserCombo1;
-    private datechooser.beans.DateChooserCombo dateChooserCombo2;
-    private datechooser.beans.DateChooserCombo dateChooserCombo3;
     private javax.swing.JButton jButton1;
     private javax.swing.JComboBox<String> jComboBox1;
+    private com.toedter.calendar.JDateChooser jDateChooser1;
+    private com.toedter.calendar.JDateChooser jDateChooser2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

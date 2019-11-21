@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.10.0.final using JasperReports Library version 6.10.0-unknown  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SADT" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c8dc01a1-029f-40b4-9907-7aa1608032ce">
+	<subDataset name="Dataset1" uuid="eedb808e-0262-4d35-9618-04921c88df3a">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+	</subDataset>
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
@@ -19,9 +24,23 @@
 	<field name="suspeita" class="java.lang.String"/>
 	<field name="data_sintomas" class="java.lang.String"/>
 	<field name="uso_de" class="java.lang.String"/>
-	<field name="Field_1" class="java.lang.String"/>
+	<field name="outro" class="java.lang.String"/>
+	<field name="caso" class="java.lang.String"/>
+	<field name="comunicante" class="java.lang.String"/>
+	<field name="codigo" class="java.lang.String"/>
+	<field name="sadt" class="java.lang.String"/>
+	<field name="diagnostico" class="java.lang.String"/>
+	<field name="controle" class="java.lang.String"/>
+	<field name="n_sessoes" class="java.lang.String"/>
+	<field name="material" class="java.lang.String"/>
+	<field name="data_requisicao" class="java.lang.String"/>
+	<field name="encaminhar" class="java.lang.String"/>
+	<field name="endereco" class="java.lang.String"/>
+	<field name="codigo_unidade2" class="java.lang.String"/>
+	<field name="telefone" class="java.lang.String"/>
+	<field name="cr" class="java.lang.String"/>
 	<background>
-		<band splitType="Stretch"/>
+		<band height="77" splitType="Stretch"/>
 	</background>
 	<title>
 		<band height="62" splitType="Stretch">
@@ -68,7 +87,10 @@
 		</band>
 	</title>
 	<detail>
-		<band height="275" splitType="Stretch">
+		<band height="437" splitType="Stretch">
+			<ellipse>
+				<reportElement x="272" y="125" width="10" height="10" uuid="800aa83b-95e6-45ba-b41c-7bdb18508b3b"/>
+			</ellipse>
 			<staticText>
 				<reportElement x="-11" y="0" width="136" height="14" uuid="0d1ca10c-5ef0-4c35-b7a4-98c3b53608a5"/>
 				<textElement>
@@ -126,7 +148,7 @@
 			</staticText>
 			<textField>
 				<reportElement x="40" y="65" width="100" height="30" uuid="820c2ff4-59c3-43bc-a23b-57b617e866c9"/>
-				<textFieldExpression><![CDATA[   $F{municipio}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{municipio}]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="-10" y="65" width="100" height="30" uuid="be7b3536-31c8-4609-a756-6e00de085458"/>
@@ -141,7 +163,7 @@
 				<text><![CDATA[Código municipal]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="-11" y="110" width="100" height="30" uuid="d32919cc-e293-4231-88ff-1cf14a10aae9"/>
+				<reportElement x="-11" y="110" width="271" height="110" uuid="d32919cc-e293-4231-88ff-1cf14a10aae9"/>
 				<textFieldExpression><![CDATA[$F{suspeita}]]></textFieldExpression>
 			</textField>
 			<staticText>
@@ -149,12 +171,69 @@
 				<text><![CDATA[Suspeita Clinica ]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="320" y="90" width="100" height="30" uuid="8f462585-0ae5-4d08-b387-c58dda605a15"/>
+				<reportElement x="430" y="95" width="100" height="30" uuid="8f462585-0ae5-4d08-b387-c58dda605a15"/>
 				<textFieldExpression><![CDATA[$F{data_sintomas}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="210" y="90" width="116" height="30" uuid="b44d62fb-c15a-4f1e-b66c-7c36ecbd0514"/>
+				<reportElement x="304" y="90" width="116" height="30" uuid="b44d62fb-c15a-4f1e-b66c-7c36ecbd0514"/>
 				<text><![CDATA[data primeiros sintomas:]]></text>
+			</staticText>
+			<ellipse>
+				<reportElement x="272" y="142" width="10" height="10" uuid="d174e501-99a2-4eb8-bff4-d67d519ad8c6"/>
+			</ellipse>
+			<textField>
+				<reportElement x="270" y="142" width="27" height="24" uuid="28f2d365-5ac5-4f03-8ee6-84a8d75efe5a"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[ $F{outro}
+]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="284" y="141" width="100" height="20" uuid="d45aa965-1cdd-4474-9715-9a69fc642db9"/>
+				<text><![CDATA[ outro]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="274" y="125" width="18" height="16" uuid="3035838c-47fe-45c7-a0c3-70c4a8b19520"/>
+				<textFieldExpression><![CDATA[$F{uso_de}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="280" y="125" width="100" height="30" uuid="a5e42c35-ffe5-4688-9b1f-6f9f9ba08b70"/>
+				<text><![CDATA[  Uso de]]></text>
+			</staticText>
+			<ellipse>
+				<reportElement x="287" y="169" width="10" height="10" uuid="0207add0-1b62-4bca-a66a-3b2d68700910"/>
+			</ellipse>
+			<ellipse>
+				<reportElement x="330" y="169" width="10" height="10" uuid="27e32705-3664-4fc4-84d5-8d36f08ae9bb"/>
+			</ellipse>
+			<staticText>
+				<reportElement x="420" y="169" width="160" height="30" uuid="f9790bea-2b7f-4294-9137-ac9deabe1578"/>
+				<text><![CDATA[de doença not. Compulsóra]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="290" y="170" width="12" height="20" uuid="963a5f90-071e-48b1-95eb-8effbd589fc2"/>
+				<textFieldExpression><![CDATA[$F{caso}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="297" y="169" width="33" height="30" uuid="3230b1a3-c1bd-4639-ad2d-4bf753df4b82"/>
+				<text><![CDATA[ caso]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="330" y="168" width="14" height="13" uuid="7a846006-9e1b-4e5d-87a8-53f180a71821"/>
+				<textFieldExpression><![CDATA[$F{comunicante}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="340" y="169" width="100" height="30" uuid="4ad7d080-0a21-4fee-938d-148f90036461"/>
+				<text><![CDATA[ comunicante]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="450" y="210" width="100" height="30" uuid="0d4cc2fa-6f74-4dfc-9825-c2eeb6aa1065"/>
+				<textFieldExpression><![CDATA[$F{codigo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="410" y="210" width="100" height="30" uuid="cb53d07f-68c6-4fe7-89c6-85c19152d158"/>
+				<text><![CDATA[codigo: ]]></text>
 			</staticText>
 		</band>
 	</detail>
